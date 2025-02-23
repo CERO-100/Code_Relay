@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event - Code Relay</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>College Event: Code Relay</h1>
+    </header>
+    <main class="container">
+        <section id="code-relay">
+            <h2>Code Relay</h2>
+            <div id="language-selection" class="selection">
+                <p>Choose a programming language:</p>
+                <button class="language-btn" onclick="selectLanguage('java')">Java</button>
+                <button class="language-btn" onclick="selectLanguage('c')">C</button>
+                <button class="language-btn" onclick="selectLanguage('cpp')">C++</button>
+                <button class="language-btn" onclick="selectLanguage('python')">Python</button>
+            </div>
+            <div id="timer" class="timer" style="display:none;">5:00</div>
+            <div id="code-display" class="display" style="display:none;">
+                <pre id="code-snippet"></pre>
+                <div id="code-explanation" class="explanation"></div>
+            </div>
+            <div id="code-editor" class="editor" style="display:none;">
+                <div id="editor-container"></div>
+                <button id="submit-button" class="submit-btn">Submit</button>
+                <div id="result-message" class="result-message"></div>
+                <div id="output-message" class="output-message"></div>
+                <div id="time-taken" class="time-taken"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
